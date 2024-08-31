@@ -106,11 +106,20 @@ export default function Home() {
               </Stack>
           </Box>
         </Modal>
-      <Button variant='contained' onClick={()=>{
-        handleOpen();
-      }}>
-        Add New Item
-      </Button>
+      <Box
+        display='flex'
+        gap={2}>
+          <Button variant='contained' onClick={()=>{
+            handleOpen();
+          }}>
+            Add New Item
+          </Button>
+          <Button variant='contained' onClick={()=>{
+            handleOpen();
+          }}>
+            Add Items by Image
+          </Button>
+      </Box>
       <Box border ='1px solid #333'>
        <Box 
         width = '800px' 
